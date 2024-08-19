@@ -1,9 +1,12 @@
+import { BentoDemo } from '@/components/bento/Bento';
+import { LogoSectionDemo } from '@/components/LogoSection';
 import react from 'react';
 
 const Resources = () => {
     return (
-        <div>
-            <h1>Resources</h1>
+        <div className='flex flex-col w-screen h-screen pr-24'>
+            <BentoDemo /> 
+            <LogoSectionDemo />
         </div>
     );
 }

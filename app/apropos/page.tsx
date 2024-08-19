@@ -4,7 +4,6 @@ const Apropos = () => {
   return (
     <div>
       
-      <BentoDemo />
     </div>
   );
 }
