@@ -29,14 +29,14 @@ export default function Home() {
             className="w-full h-full gap-4  flex flex-col px-20 justify-center items-start"
           >
             <div className="flex flex-col">
-              <div className="text-5xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+              <div className="2xl:text-5xl text-3xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
               Protégez Votre
                 <FlipWords words={words} /> <br />
                 avec CyberProtect
               </div>
             </div>
 
-            <p className="text-xl font-extralight">
+            <p className="text-sm font-extralight xl:text-md 2xl:text-3xl">
               Chez CyberProtect, nous sommes spécialisés dans les audits de
               sécurité pour assurer la protection de votre site web contre les
               cybermenaces. Nos experts analysent en profondeur les
@@ -61,7 +61,7 @@ export default function Home() {
             <CardSpotlightDemo />
           </div>
         </div>
-        <div id="bottom" className="w-full h-full px-20">
+        <div id="bottom" className="w-full h-full px-20 ">
           <FeaturesSectionDemo />
         </div>
       </div>

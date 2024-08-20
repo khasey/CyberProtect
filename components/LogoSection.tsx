@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export function LogoSectionDemo() {
   return (
-    <div className="w-full py-12 ">
+    <div className="w-full py-6 2xl:py-12 ">
       <div className="mx-auto w-full ">
         <div
           className="group relative flex justify-center items-center overflow-hidden"
@@ -26,7 +26,7 @@ export function LogoSectionDemo() {
                 }}
               >
                 {LOGOS.map((logo, key) => (
-                  <div key={key} className="flex items-center justify-center w-24">
+                  <div key={key} className="flex items-center justify-center w-16 2xl:w-24">
                     <img
                       src={logo.url}
                       className="h-10 brightness-0"

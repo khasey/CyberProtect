@@ -65,7 +65,7 @@ const Services = () => {
     
       
     </div>
-    <AnimatedGridPattern
+    {/* <AnimatedGridPattern
         numSquares={130}
         maxOpacity={0.5}
         duration={2}
@@ -74,7 +74,7 @@ const Services = () => {
           "[mask-image:radial-gradient(800px_circle_at_center,white,transparent)]",
           "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
         )}
-      />
+      /> */}
     </>
   );
 }

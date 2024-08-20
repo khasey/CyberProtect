@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { SidebarDemo } from "@/components/sidebar/SideBar"; // Chemin à vérifier
 import { DockDemo } from "@/components/dock";
+import { TailwindIndicator } from "@/components/TailwindIndicator";
  // Assurez-vous que le chemin est correct
 
 const inter = Inter({ subsets: ["latin"] });
@@ -49,6 +50,7 @@ export default function RootLayout({
             {children} {/* Contenu des pages */}
           </SidebarDemo>
         )}
+        <TailwindIndicator />
       </body>
     </html>
   );
