@@ -6,12 +6,14 @@ import { DotPattern } from "@/components/magicui/dot-pattern";
 import WordRotate from "@/components/magicui/word-rotate";
 import { Logo, SidebarDemo } from "@/components/sidebar/SideBar";
 import { FeaturesSectionDemo } from "@/components/ui/features";
+import { FlipWords } from "@/components/ui/flip-word";
 import { cn } from "@/lib/utils";
 import { ArrowRightIcon, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  const words = ["Site", "Application mobile", "Application web", "Réseau", "Entreprise"];
   return (
     <div className="relative flex flex-col w-screen h-screen">
       <div
@@ -27,20 +29,11 @@ export default function Home() {
             className="w-full h-full gap-4  flex flex-col px-20 justify-center items-start"
           >
             <div className="flex flex-col">
-              <h1 className="text-5xl font-bold inline-flex justify-center items-center">
-                Protégez Votre&nbsp;
-                <WordRotate
-                  className="text-5xl font-bold text-black inline"
-                  words={[
-                    "Site",
-                    "Application mobile",
-                    "Application web",
-                    "Réseau",
-                    "Entreprise",
-                  ]}
-                />
-              </h1>
-              <h1 className="text-5xl font-bold">avec CyberProtect</h1>
+              <div className="text-5xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+              Protégez Votre
+                <FlipWords words={words} /> <br />
+                avec CyberProtect
+              </div>
             </div>
 
             <p className="text-xl font-extralight">
@@ -54,10 +47,10 @@ export default function Home() {
             </p>
             <div className="z-20">
               <Link href="/services">
-              <AnimatedShinyText className="cursor-pointer inline-flex items-center justify-center  transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-              <span>✨ Découvrir nos services</span>
-                <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-              </AnimatedShinyText>
+                <AnimatedShinyText className="cursor-pointer inline-flex items-center justify-center  transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+                  <span>✨ Découvrir nos services</span>
+                  <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+                </AnimatedShinyText>
               </Link>
             </div>
           </div>
