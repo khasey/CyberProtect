@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import { Sidebar, SidebarBody, SidebarLink } from "../ui/sidebar";
+import Image from 'next/image';
 import {
   IconAddressBook,
   IconArrowLeft,
@@ -13,7 +14,11 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
+
 export function SidebarDemo({ children }: { children: React.ReactNode }) {
+
+  const img = "../public/logo-cyberprotect.svg";
+
   const links = [
     {
       label: "Acceuil",
@@ -57,7 +62,7 @@ export function SidebarDemo({ children }: { children: React.ReactNode }) {
   return (
     <div
       className={cn(
-        `rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden`,
+        `rounded-md  flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden`,
         "h-screen"
       )}
     >
@@ -82,9 +87,13 @@ export function SidebarDemo({ children }: { children: React.ReactNode }) {
 }
 
 export const Logo = () => {
+  const img = "/logo/logo.svg";
   return (
     <Link href="#" className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20">
-      <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
+      {/* <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" /> */}
+      <Image src={img} alt={"logo"} width={24} height={24}>
+
+      </Image>
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -97,9 +106,12 @@ export const Logo = () => {
 };
 
 export const LogoIcon = () => {
+  const img = "/logo/logo.svg";
   return (
     <Link href="#" className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20">
-      <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
+      {/* <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" /> */}
+      <Image src={img} alt={"logo"} width={24} height={24}></Image>
+     
     </Link>
   );
 };
