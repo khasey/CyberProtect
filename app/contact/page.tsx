@@ -173,7 +173,7 @@ const Contact = () => {
                       {sending ? "Envoi..." : "Envoyer le Message"}
                     </button>
                     {success && <p className="mt-3 text-green-500">Message envoyé avec succès !</p>}
-                    {error && <p className="mt-3 text-red-500">Erreur lors de l'envoi du message.</p>}
+                    {error && <p className="mt-3 text-red-500">Erreur lors de l&apos;envoi du message.</p>}
                   </div>
                 </div>
               </form>

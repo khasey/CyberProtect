@@ -40,10 +40,10 @@ export default function Home() {
               Chez CyberProtect, nous sommes spécialisés dans les audits de
               sécurité pour assurer la protection de votre site web contre les
               cybermenaces. Nos experts analysent en profondeur les
-              vulnérabilités pour vous offrir une tranquillité d'esprit.
+              vulnérabilités pour vous offrir une tranquillité d&apos;esprit.
               Protégez vos données, renforcez votre réputation et prévenez les
               attaques en investissant dans la sécurité de votre site dès
-              aujourd'hui.
+              aujourd&apos;hui.
             </p>
             <div className="z-20">
               <Link href="/services">
