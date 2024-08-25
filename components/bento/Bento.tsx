@@ -21,7 +21,7 @@ import { AnimatedListDemo } from "../ui/animatedList";
 import { AnimatedBeamDemo } from "../ui/animatedBeam";
 import { OrbitingCirclesDemo } from "../ui/orbitingCircle";
 import { RippleDemo } from "../ui/ripple";
-import DotPatternDemo2, { DotPatternDemo } from "../ui/dotPattern";
+// import DotPatternDemo2, { DotPatternDemo } from "../ui/dotPattern";
 import { cn } from "@/lib/utils";
 import DotPattern from "../magicui/dot-pattern";
 import AnimatedGridPattern from "../magicui/animated-grid-pattern";
