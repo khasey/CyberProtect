@@ -1,7 +1,11 @@
 import { NextResponse } from 'next/server';
 import sendgrid from '@sendgrid/mail';
 
-sendgrid.setApiKey("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");
+const apiKey = process.env.SENDGRID_API_KEY;
+if (!apiKey) {
+  throw new Error('SENDGRID_API_KEY is not defined');
+}
+sendgrid.setApiKey(apiKey);
 
 export async function POST(req: Request) {
   try {
